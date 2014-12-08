@@ -1,0 +1,509 @@
+doctype html
+html
+  head
+    title Amor - HTML Wedding Template
+    // The Meta
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="Amor - HTML Wedding Template")
+    meta(name="keywords", content="jquery, css3, html5, animation, mobile, responsive, preview")
+    meta(name="author", content="Doriana")
+    link(rel="shortcut icon", href="images/favicon.ico")
+    // The Stylesheets
+    link(rel="stylesheet", href="css/bootstrap.css", type="text/css")
+    link(rel="stylesheet", href="css/style.css", type="text/css")
+    link(rel="stylesheet", href="css/prettyPhoto.css", type="text/css")
+    link(rel="stylesheet", href="css/animate.css", type="text/css")
+    link(rel="stylesheet", media="screen", href="css/mobile.css", type="text/css")
+    //if IE
+      script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
+    //if lte IE 7
+      script(src="js/IE8.js", type="text/javascript")
+    //if lt IE 7
+      link(rel="stylesheet", type="text/css", media="all", href="css/ie6.css")
+    // The Fonts
+    link(href="http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,900,800", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Reenie+Beanie", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Great+Vibes", rel="stylesheet", type="text/css")
+    link(href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel="stylesheet")
+    //if IE 7
+      link(rel="stylesheet", href="css/font-awesome-ie7.min.css")
+    script(src="js/modernizr.min.js")
+  body#top(data-spy="scroll")
+    #wrapper
+      // NAVIGATION (menu left)
+      .container
+        .header-quote &#8220;Happily ever after is not a fairy tale. It&#8217;s a choice.&#8221;
+        ul#gn-menu.gn-menu-main
+          li.gn-trigger
+            .trigger
+              a.gn-icon.gn-icon-menu
+                span Menu
+            nav.gn-menu-wrapper
+              .gn-scroller
+                ul.gn-menu
+                  li
+                    a.gn-icon.fa-heart(href="#home") Home
+                  li
+                    a.gn-icon.fa-comment(href="#story") The Story
+                  li
+                    a.gn-icon.fa-users(href="#about") Special Guests
+                  li
+                    ul.gn-submenu
+                      li
+                        a.gn-icon.fa-chevron-right(href="#parents") Parents
+                      li
+                        a.gn-icon.fa-chevron-right(href="#maids") Bridesmaids &#38; Groomsmen
+                  li
+                    a.gn-icon.fa-glass(href="#events") Events
+                  li
+                    ul.gn-submenu
+                      li
+                        a.gn-icon.fa-chevron-right(href="#ceremony") Wedding Ceremony
+                      li
+                        a.gn-icon.fa-chevron-right(href="#party") Wedding Party
+                  li
+                    a.gn-icon.fa-camera(href="#album") Photo Album
+                  li
+                    a.gn-icon.fa-book(href="#rsvp") Send Message
+              // end gn-scroller
+          li.back
+            a.gn-icon.fa-angle-double-up(href="#top")
+      // end container
+      section.ss-style-bottom
+      // END NAVIGATION (menu left)
+      // HEADER
+      #home
+        ul#cbp-bislideshow.cbp-bislideshow
+          li
+            img(src="images/header/1.jpg", alt="image01")
+          li
+            img(src="images/header/3.jpg", alt="image02")
+          li
+            img(src="images/header/3.jpg", alt="image03")
+        .container
+          .header.animated.tada
+            h1 Fauziah &#38; Adi
+            h4 ARE GETTING MARRIED
+            hr
+            h4 Sunday, 28th of December 2014 
+            h4 at &#8220;Halaman Kantor Kecamatan&#8221;, Cilodong
+      // end #home
+      // END HEADER
+      // STORY
+      #story
+        .story-content
+          .container
+            h3 Fauziah &#38; Adi. Their Happy Story!
+            .heart.content-style
+            .row
+              .col-md-3
+                .shape
+                  a.overlay.hexagon(href="#")
+                  .base
+                    img(src="images/photos/zia.jpg", alt="zia")
+                h4.bride-name Fauziah Azzahra
+                h3.bride-description Bride
+                .social
+                  a(href="https://www.facebook.com/fauziah.azzahra.547")
+                    i.fa-facebook
+                  a(href="https://twitter.com/zia_azzahra")
+                    i.fa-twitter
+              // end col-md-3
+              .col-md-6
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra diam ut lorem fringilla, et pellentesque tortor suscipit. Integer cursus posuere libero porta molestie. Integer vitae sem dui. Quisque aliquet porta purus, non dapibus nisi tempor adipiscing. Pellentesque habitant morbi tristique senectus et netus et malesuada est dui vel congue turpis venenatis in. Aliquam malesuada sapien sit amet nunc bibendum pellentesque. Mauris molestie condimentum nulla. Integer et lacus massa. Aliquam adipiscing congue ante non accumsan. Donec cursus fringilla facilisis.
+                p
+                  | Vivamus fringilla euismod risus, et pretium odio aliquet id. Duis at posuere urna. Fusce sit amet iaculis nibh. Maecenas vitae quam mi. Vivamus viverra, lorem vitae placerat ultricies, nisi massa pretium tortor, eget malesuada ligula arcu id leo. Pellentesque dapibus justo enim, sed molestie odio ultricies ac. Aliquam tempor augue nulla, at vestibulum nisi hendrerit vel. Mauris rutrum est at massa blandit fermentum. Vivamus velit libero, dignissim in tincidunt eu, posuere vitae justo.
+                p
+                  | Maecenas ultricies tincidunt felis non vulputate. Phasellus sit amet scelerisque tellus. Nulla lacinia et lorem quis molestie. Vestibulum at lectus nec sem accumsan laoreet vel id nisi. Nulla sit amet hendrerit nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                p . . . 
+              // end-col-md-6
+              .col-md-3
+                .shape
+                  a.overlay.hexagon(href="#")
+                  .base
+                    img(src="images/photos/adi.jpg", alt="adi")
+                h4.groom-name Adi Kurniawan
+                h3.groom-description Groom
+                .social
+                  a(href="https://www.facebook.com/daimagine")
+                    i.fa-facebook
+                  a(href="https://twitter.com/kurniawan_dai")
+                    i.fa-twitter
+              // end col-md-3
+            // end row
+          // end container
+        // end story content
+      //
+        end #story>
+        	<!--END STORY
+      // TIMER
+      #timer
+        .container
+          #countdown-bg
+            ul#countdown
+              li
+                span.days 00
+                .timeRefDays days
+              li
+                span.hours 00
+                .timeRefHours hours
+              li
+                span.minutes 00
+                .timeRefMinutes minutes
+              li
+                span.seconds 00
+                .timeRefSeconds seconds
+          .timer-text
+            h2 till the happy event!
+        // end container
+      // end #timer
+      // END TIMER
+      // ABOUT
+      #about
+        .container
+          // Parents
+          #parents
+            h3 The Happy Couple's Parents
+            .heart.content-style
+            .row
+              .col-md-2
+                .parents
+                  a.overlay.hexagon(href="#")
+                  .base
+                    img(src="http://placehold.it/190x190/D65679/E06485", alt="her mother")
+                  .parents-text-women
+                    h4 Evi Lutfiah, Almh.
+              // end col-md-2
+              .col-md-2
+                .parents
+                  a.overlay.hexagon(href="#")
+                  .base
+                    img(src="http://placehold.it/190x190/6e6e86/76768E", alt="her father")
+                  .parents-text-men
+                    h4 Usman Balau
+              // end col-md-2
+              .col-md-4
+                .parents-text
+                  h2 &#171; &#160; Fauziah &#160; &#38;  &#160; Adi &#160; &#187; 
+              // end col-md-4
+              .col-md-2
+                .parents
+                  a.overlay.hexagon(href="#")
+                  .base
+                    img(src="http://placehold.it/190x190/D65679/E06485", alt="his mother")
+                  .parents-text-women
+                    h4 Tuginem
+              // end col-md-2
+              .col-md-2
+                .parents
+                  a.overlay.hexagon(href="#")
+                  .base
+                    img(src="http://placehold.it/190x190/6e6e86/76768E", alt="his father")
+                  .parents-text-men
+                    h4 Amat Sahro
+              // end col-md-2
+            // end row
+          //
+            end #parents>
+            			
+          // Maids
+          #maids
+            h3 Bridesmaids &#38; Groomsmen
+            .heart.content-style
+            .row
+              .col-md-3
+                .bridesmaid
+                  img(src="images/bridesmaid.png", alt="bridesmaids")
+              // end col-md-3
+              .col-md-3.maids
+                .bridesmaids
+                  h4 Luthfiani Khoirunnisa
+                  h4 Amalia Mulia Hidayat
+                  h4 Suci
+              // end col-md-3
+              .col-md-3.maids
+                .groomsmen
+                  h4 Fauzan Badruttamam
+                  h4 Prasetyo Nugroho
+              // end col-md-3
+              .col-md-3
+                .bestman
+                  img(src="images/bestman.png", alt="bestmen")
+              // end col-md-3
+            // end row
+          // end #maids
+        // end container
+      // end #about
+      // END ABOUT
+      // EVENTS
+      #events
+        .container
+          .events
+            h2
+              | You are welcome to attend
+              br
+              | our Wedding Ceremony and our Wedding Party
+              br
+              | on 28th of December 2014
+        // end container
+      // end #events
+      // END EVENTS
+      // WEDDING
+      #wedding
+        .container
+          #ceremony
+            h3 The Wedding Ceremony
+            .heart.content-style
+            .row
+              .col-md-4
+                .ceremony-data
+                  h4 Date:
+                  p 28th of December 2014
+              // end col-md-4
+              .col-md-4
+                .ceremony-data
+                  h4 Time:
+                  p 08:00 in the morning
+              // end col-md-4
+              .col-md-4
+                .ceremony-data
+                  h4 Location:
+                  p Masjid At-Taqwa, Jln. M. Nasir RT 01/RW 08
+              // end col-md-4
+            // end row
+            .row
+              .col-md-6
+                .ceremony-text
+                  p
+                    | Cursus risus, incidunt felis condimentum eget. Curabitur convallis ultricies tristique. Vivamus in sodales lorem. Nunc vel dolor at diam viverra dignissim. Cras a est eget nulla porttitor hendrerit. Nunc eget sapien hendrerit, lobortis dolor mattis, pretium tellus. Mauris ultricies aliquet leo bibendum elementum. Fusce et auctor ipsum. Nunc nec consequat sapien. Nunc imperdiet turpis justo, vel viverra velit sollicitudin a. Morbi non sapien sit amet orci eleifend. Praesent porta, justo quis blandit iaculis, nibh sapien volutpat justo, non fringilla mi tellus at nisl. Nullam eleifend vestibulum iaculis. Nullam velit urna, dapibus sed varius sit amet, venenatis sed ligula. Nam vulputate mi ut lorem lobortis, ac elementum risus dictum. Maecenas fermentum ornare ante, vel congue turpis venenatis in. Quisque quis enim sagittis, commodo sapien vel, interdum nunc. Vivamus nec ultrices risus. Vestibulum congue, diam id volutpat consectetur, dui ligula tincidunt nisi.
+              // end col-md-6
+              .col-md-6
+                // Slideshow
+                .rslides_container
+                  ul#slider.rslides
+                    li
+                      img(src="http://placehold.it/585x293/6e6e86/76768E", alt="ceremony")
+                    li
+                      img(src="http://placehold.it/585x293/6e6e86/76768E", alt="ceremony")
+                    li
+                      img(src="http://placehold.it/585x293/6e6e86/76768E", alt="ceremony")
+              // end col-md-6
+            // end row
+          // end #ceremony
+          #party
+            h3 The Wedding Party
+            .heart.content-style
+            .row
+              .col-md-4
+                .party-data
+                  h4 Date:
+                  p 28th of December 2014
+              // end col-md-4
+              .col-md-4
+                .party-data
+                  h4 Time:
+                  p 11:00 in the morning
+              // end col-md-4
+              .col-md-4
+                .party-data
+                  h4 Location:
+                  p Halaman Kantor Kecamatan Cilodong, Depok
+              // end col-md-4
+            // end row
+            .row
+              .col-md-6
+                .party-text
+                  p
+                    | Utentis laoreet tellus ut nisl porta, nec lobortis leo rutrum. Phasellus varius sapien eget sapien vulputate, vitae aliquet urna commodo. Etiam euismod ipsum vel erat facilisis posuere. Phasellus iaculis felis vel facilisis pretium.
+                  .location-data
+                    h4 Kantor Kecamatan Cilodong
+                    p
+                      | Jln. M. Nasir No.10
+                      br
+                      | Cilodong, Depok
+              // end col-md-6
+              .col-md-6
+                #gmap
+                  #location
+              // end col-md-6
+            // end row
+          // end #party
+        // end container
+      // end #wedding
+      // END WEDDING
+      // PHOTO ALBUM
+      #album
+        .container
+          h3 The Lovers' Photo Album
+          .heart.content-style
+          .album-text
+            p
+              | Sanitas vitae massa ligula. Donec scelerisque rutrum libero tempus posuere. Morbi tristique diam non porttitor aliquet. Morbi gravida bibendum leo, sed porta mauris laoreet in. Duis sed elit mauris. Donec mollis sapien in quam aliquam sodales. Integer mattis leo ac ante suscipit semper. Curabitur vel malesuada augue, non ultrices lacus. Vestibulum id suscipit leo, ac semper lectus. Aenean mollis neque mi, vel eleifend neque vestibulum vel. Mauris orci diam, bibendum eu lobortis.
+          .prettyPhoto-gallery
+            section#photostack.photostack
+              div
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
+                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Autumn Walk")
+                  figcaption
+                    h2.photostack-title Autumn Walk
+                    .photostack-back
+                      | &#8220;I feel like everything in my life has led me to you. My choices, my heartbreaks, my regrets. Everything. My past seems worth it. Because if I had done one thing differently, I might never have met you.&#8221;
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
+                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Happy Moments")
+                  figcaption
+                    h2.photostack-title Happy Moments
+                    .photostack-back
+                      | "The only way you can beat my crazy was by doing something crazy yourself. Thank you. I love you. I knew it the minute I met you. I&#8217;m sorry it took so long for me to catch up. I just got stuck."
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
+                    img(src="http://placehold.it/240x240/D65679/E06485", alt="My Sunshine")
+                  figcaption
+                    h2.photostack-title My Sunshine
+                    .photostack-back
+                      | "I want his fingers to always find the spaces in between mine."
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
+                    img(src="http://placehold.it/240x240/D65679/E06485", alt="At the Countryside")
+                  figcaption
+                    h2.photostack-title At the Countryside
+                    .photostack-back
+                      | "I"ve looked around enough to know that you"re the one I want to go through time with."
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
+                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Relaxing on the Beach")
+                  figcaption
+                    h2.photostack-title Relaxing on the Beach
+                    .photostack-back
+                      | "Before we met, I was as lost as a person could be and yet you saw something in me that somehow gave me direction again."
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
+                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Love is in the Air")
+                  figcaption
+                    h2.photostack-title Love is in the Air
+                    .photostack-back
+                      | "You do realize that your greatest superpower is your ability to win me over with just one look, no matter how ridiculous you sound, right?"
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img07")
+                  figcaption
+                    h2.photostack-title Fit for Each Other
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img08")
+                  figcaption
+                    h2.photostack-title One Rainy Day
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img06")
+                  figcaption
+                    h2.photostack-title Just Happy
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img02")
+                  figcaption
+                    h2.photostack-title Country Talk
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img11")
+                  figcaption
+                    h2.photostack-title Resting in the Park
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img12")
+                  figcaption
+                    h2.photostack-title Eternity
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img13")
+                  figcaption
+                    h2.photostack-title A Romantic Date
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img14")
+                  figcaption
+                    h2.photostack-title Watching the Sky
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img15")
+                  figcaption
+                    h2.photostack-title There"s Only Love
+                figure(data-dummy="")
+                  a.photostack-img(href="#")
+                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img5")
+                  figcaption
+                    h2.photostack-title Together Again
+          // end PrettyPhoto gallery
+        // end container
+      // end #album
+      // END PHOTO ALBUM
+      // RSVP
+      #rsvp
+        .container
+          .rsvp-text
+            h2 Are you attending?
+            p We expecting your presence on the Wedding Ceremony and Party. Thank you!
+        // end container
+      // end #rsvp
+      // END RSVP
+      // FORM
+      #form
+        .container
+          h3 Say something for Us
+          .heart.content-style
+          .row
+            .col-md-3.rsvp-image
+              img(src="images/rsvp-left.png", alt="rsvp")
+            // end col-md-3
+            .col-md-6
+              .contact-form
+                form#contact-form.form-horizontal(method="POST", action="contact-form.php", onsubmit="alert('Thank you for your feedback!');")
+                  .form-group
+                    label Name
+                    input.form-control(type="text", name="name", required="")
+                  .form-group
+                    label Message
+                    textarea.form-control(name="message", rows="9", maxlength="1024", required="")
+                  .form-group
+                    .col-lg-offset-2.col-lg-10
+                      button.btn.btn-default(type="reset") Reset
+                      input(type="hidden", name="save", value="contact-form")
+                      button#submit.btn.btn-success(type="submit") Send
+              // end contact-form
+            // end col-md-6
+            .col-md-3.rsvp-image
+              img(src="images/rsvp-right.png", alt="rsvp")
+            // end col-md-3
+          // end row
+        // end container
+      // end #form
+      // END FORM
+      // FOOTER
+      .copyright
+        .container
+          | &#169; December 28th, 2014 - Fauziah & Adi
+        // end container
+      // END FOOTER
+    // end #wrapper
+    script(type="text/javascript", src="js/jquery-1.11.1.min.js")
+    script(type="text/javascript", src="js/bootstrap.min.js")
+    script(type="text/javascript", src="js/main.js")
+    script(type="text/javascript", src="js/jquery.scrollTo-1.4.2-min.js")
+    script(type="text/javascript", src="js/jquery.localscroll-1.2.7-min.js")
+    script(type="text/javascript", src="js/jquery.parallax-1.1.3.js")
+    script(type="text/javascript", src="js/jquery.easing.1.3.js")
+    script(type="text/javascript", src="js/jquery.imagesloaded.min.js")
+    script(type="text/javascript", src="js/classie.js")
+    script(type="text/javascript", src="js/cbpBGSlideshow.min.js")
+    script(type="text/javascript", src="js/photostack.js")
+    script(type="text/javascript", src="js/gnmenu.js")
+    script(type="text/javascript", src="js/countdown.js")
+    script(type="text/javascript", src="js/responsiveslides.js")
+    script(type="text/javascript", src="js/owl.carousel.js")
+    script(type="text/javascript", src="js/jquery.prettyPhoto.js")
+    script(src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false")
+    script(type="text/javascript", src="js/index.js")
