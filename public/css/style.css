@@ -1750,7 +1750,7 @@ figure.photostack-current::after {
 }
 
 /* rsvp slider */
-.rsvp-slider-btns2_nav.prev {
+.rsvp-slider-btns1_nav.prev {
 	z-index: 3;
 	position: absolute;
 	opacity: 0.6;
@@ -1762,7 +1762,7 @@ figure.photostack-current::after {
 	height: 30px;
 }
 
-.rsvp-slider-btns2_nav.next {
+.rsvp-slider-btns1_nav.next {
 	z-index: 3;
 	position: absolute;
 	opacity: 0.6;
@@ -1790,4 +1790,8 @@ figure.photostack-current::after {
 .rsvp-text p {
 	padding: 0.6em 0.2em;
 	background-color: rgba(0,0,0,0.55);
+}
+
+.rsvp-slider-btns_nav {
+	position: absolute;
 }
