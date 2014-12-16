@@ -177,7 +177,6 @@ window.onload = function () {
 	];
 
 	var myLatlng = new google.maps.LatLng(-6.425122,106.848002,17);
-
 	var options = {
 		mapTypeControlOptions: {
 			mapTypeIds: ['Styled']
@@ -195,11 +194,37 @@ window.onload = function () {
 	var marker = new google.maps.Marker({
 	    position: myLatlng,
 	    map: map,
-	    title: 'Amor',
+	    title: 'Wedding Party',
 	    url: 'https://www.google.co.id/maps/place/Kecamatan+Cilodong/@-6.425122,106.848002,17z/data=!3m1!4b1!4m2!3m1!1s0x2e69ea4c0d6be8e1:0x13693ffebbb96901?hl=en'
 	});
 
 	google.maps.event.addListener(marker, 'click', function() {
+	    var win = window.open(this.url, '_blank');
+  		win.focus();
+	});
+
+	var myLatlngMosque = new google.maps.LatLng(-6.43592,106.84967,17);
+	var optionsMosque = {
+		mapTypeControlOptions: {
+			mapTypeIds: ['Styled']
+		},
+		center: myLatlngMosque,
+		zoom: 18,
+		disableDefaultUI: false,	
+		mapTypeId: 'Styled'
+	};
+	var divMosque = document.getElementById('location-mosque');
+	var mapMosque = new google.maps.Map(divMosque, optionsMosque);
+	mapMosque.mapTypes.set('Styled', styledMapType);
+
+	var markerMosque = new google.maps.Marker({
+	    position: myLatlngMosque,
+	    map: mapMosque,
+	    title: 'Wedding Ceremony',
+	    url: 'https://www.google.co.id/maps/place/Masjid+Jami+Attaqwa/@-6.43592,106.84967,17z/data=!3m1!4b1!4m2!3m1!1s0x2e69ea447ac411bd:0xce8953d3a23e2bde?hl=en'
+	});
+
+	google.maps.event.addListener(markerMosque, 'click', function() {
 	    var win = window.open(this.url, '_blank');
   		win.focus();
 	});

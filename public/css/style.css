@@ -574,6 +574,12 @@ section::after {
 	margin: 2em 0.8em;
 }
 
+#gmap-mosque {
+	height: 180px;
+	width: 98%;
+	margin: 2em 0.8em;
+}
+
 #registry {
 	background: url('http://placehold.it/1920x1360/6e6e86/76768E') 50% 0 no-repeat fixed;
 	color: #FFF;
@@ -1311,6 +1317,11 @@ ul#countdown li .timeRefSeconds {
 	height: 100%;
 }
 
+#location-mosque {
+	width: 100%;
+	height: 100%;
+}
+
 .location-data h4 {
 	font-size: 1.2em;
 	color: #D65679;
@@ -1745,7 +1756,7 @@ figure.photostack-current::after {
 	opacity: 0.6;
 	text-indent: -9999px;
 	overflow: hidden;
-	left: 49%;
+	left: 48%;
 	background: transparent url('../images/slide-arrows.png') no-repeat left 50%;
 	width: 25px;
 	height: 30px;
