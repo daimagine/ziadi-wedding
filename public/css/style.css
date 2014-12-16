@@ -1348,8 +1348,8 @@ ul#countdown li .timeRefSeconds {
 /* ----------------- 10. PHOTO ALBUM ----------------- */
 
 .album-text p {
-	text-align: justify;
-	margin: 1.8em 0.5em;
+	text-align: center;
+	margin: 0.8em 5.5em;
 }
 
 .photostack {
