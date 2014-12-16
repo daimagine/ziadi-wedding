@@ -28,7 +28,46 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
 app.get('/', routes.index);
+app.post('/message', routes.message);
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+
+var mongoose = require('mongoose');
+var mongoURL = 'mongodb://mongouser:mongouser@dbh23.mongolab.com:27237/orchestra_8604bff8_e0cb6';
+
+mongoose.connection.on("connected", function(ref) {
+	console.log("Connected to mongo");
+
+	app.listen(app.get('port'), function() {
+	  console.log("Node app is running at localhost:" + app.get('port'));
+	});
 });
+ 
+// If the connection throws an error
+mongoose.connection.on("error", function(err) {
+	console.error('Failed to connect to mongo on startup ', err);
+});
+ 
+// When the connection is disconnected
+mongoose.connection.on('disconnected', function () {
+	console.log('Mongoose default connection to mongo disconnected');
+});
+
+var gracefulExit = function() { 
+	mongoose.connection.close(function () {
+		console.log('Mongoose default connection with mongo is disconnected through app termination');
+		process.exit(0);
+	});
+}
+ 
+// If the Node process ends, close the Mongoose connection
+process.on('SIGINT', gracefulExit).on('SIGTERM', gracefulExit);
+
+try {
+	var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
+                replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } };       
+ 
+	mongoose.connect(mongoURL);
+	console.log("Trying to connect to DB " + mongoURL);
+} catch (err) {
+	console.log("Sever initialization failed " , err.message);
+}

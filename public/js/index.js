@@ -202,5 +202,12 @@ window.onload = function () {
 	google.maps.event.addListener(marker, 'click', function() {
 	    var win = window.open(this.url, '_blank');
   		win.focus();
-	});  
+	});
+
+	$("#rsvp-slider").responsiveSlides({
+        auto: true,
+        nav: true,
+        speed: 250,
+        namespace: "rsvp-slider-btns"
+    });
 };  
