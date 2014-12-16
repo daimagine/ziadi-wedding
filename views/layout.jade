@@ -177,7 +177,7 @@ html
                 .parents
                   a.overlay.hexagon(href="#")
                   .base
-                    img(src="http://placehold.it/190x190/D65679/E06485", alt="her mother")
+                    img(src="/images/photos/mama.jpg", alt="her mother")
                   .parents-text-women
                     h4 Evi Lutfiah, Almh.
               // end col-md-2
@@ -185,7 +185,7 @@ html
                 .parents
                   a.overlay.hexagon(href="#")
                   .base
-                    img(src="http://placehold.it/190x190/6e6e86/76768E", alt="her father")
+                    img(src="/images/photos/ub.jpg", alt="her father")
                   .parents-text-men
                     h4 Usman Balau
               // end col-md-2
@@ -197,7 +197,7 @@ html
                 .parents
                   a.overlay.hexagon(href="#")
                   .base
-                    img(src="http://placehold.it/190x190/D65679/E06485", alt="his mother")
+                    img(src="/images/photos/mamak.jpg", alt="his mother")
                   .parents-text-women
                     h4 Tuginem
               // end col-md-2
@@ -205,7 +205,7 @@ html
                 .parents
                   a.overlay.hexagon(href="#")
                   .base
-                    img(src="http://placehold.it/190x190/6e6e86/76768E", alt="his father")
+                    img(src="/images/photos/bapak.jpg", alt="his father")
                   .parents-text-men
                     h4 Amat Sahro
               // end col-md-2
@@ -289,23 +289,13 @@ html
               .col-md-6
                 .ceremony-text
                   p
-                    | Aisha (RA) narrated that Rasulullah (Sallaho Alaihe Wassallam) said, “Publicise these marriages, conduct them in mosques, and beat the duff (tambourines) to announce them”. [Tirmidhi]
+                    | Aisha (RA) narrated that Rasulullah SAW said, “Publicise these marriages, conduct them in mosques, and beat the duff (tambourines) to announce them”. [Tirmidhi]
                   p
-                    | Shaykh (Mufti) Ibraheem Desai  writes, “It is Sunnah for the marriage to be pronounced and performed in the Masjid”
-                  p ...
-                  p
-                    | Our wedding ceremony will be performed at At-Taqwa Mosque as hadist said. And it will be great if you could attend and share the happiness with us.
+                    | Our wedding ceremony will be performed at At-Taqwa Mosque. And it will be great if you could attend and share the happiness with us.
               // end col-md-6
               .col-md-6
-                // Slideshow
-                .rslides_container
-                  ul#slider.rslides
-                    li
-                      img(src="http://placehold.it/585x293/6e6e86/76768E", alt="ceremony")
-                    li
-                      img(src="http://placehold.it/585x293/6e6e86/76768E", alt="ceremony")
-                    li
-                      img(src="http://placehold.it/585x293/6e6e86/76768E", alt="ceremony")
+                #gmap-mosque
+                  #location-mosque
               // end col-md-6
             // end row
           // end #ceremony
@@ -369,97 +359,67 @@ html
             section#photostack.photostack
               div
                 figure
-                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
-                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Autumn Walk")
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/1.jpg")
+                    img(src="/images/album/1-sm.jpg", alt="Wedding Invitation")
                   figcaption
-                    h2.photostack-title Autumn Walk
+                    h2.photostack-title Wedding Invitation
                     .photostack-back
-                      | &#8220;I feel like everything in my life has led me to you. My choices, my heartbreaks, my regrets. Everything. My past seems worth it. Because if I had done one thing differently, I might never have met you.&#8221;
+                      | &#8220; "The only way you can beat my crazy was by doing something crazy yourself. Thank you. I love you. I knew it the minute I met you. I&#8217;m sorry it took so long for me to catch up. I just got stuck."
                 figure
-                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
-                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Happy Moments")
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/2.jpg")
+                    img(src="/images/album/2-sm.jpg", alt="First Love")
                   figcaption
-                    h2.photostack-title Happy Moments
+                    h2.photostack-title First Love
                     .photostack-back
-                      | "The only way you can beat my crazy was by doing something crazy yourself. Thank you. I love you. I knew it the minute I met you. I&#8217;m sorry it took so long for me to catch up. I just got stuck."
+                      | I feel like everything in my life has led me to you. My choices, my heartbreaks, my regrets. Everything. My past seems worth it. Because if I had done one thing differently, I might never have met you.&#8221;
                 figure
-                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
-                    img(src="http://placehold.it/240x240/D65679/E06485", alt="My Sunshine")
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/3.jpg")
+                    img(src="/images/album/3-sm.jpg", alt="My Rose")
                   figcaption
-                    h2.photostack-title My Sunshine
+                    h2.photostack-title My Rose
                     .photostack-back
-                      | "I want his fingers to always find the spaces in between mine."
+                      | "I want her smile to always bloom for me."
                 figure
-                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
-                    img(src="http://placehold.it/240x240/D65679/E06485", alt="At the Countryside")
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/4.jpg")
+                    img(src="/images/album/4-sm.jpg", alt="Bicycling at Kostrad")
                   figcaption
-                    h2.photostack-title At the Countryside
+                    h2.photostack-title Bicycling at Kostrad
                     .photostack-back
-                      | "I"ve looked around enough to know that you"re the one I want to go through time with."
+                      | "Enjoy fresh air in the morning at Kostrad. Sweating but always amusing to spend my time with you"
                 figure
-                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
-                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Relaxing on the Beach")
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/5.jpg")
+                    img(src="/images/album/5-sm.jpg", alt="Lovely Gifts")
                   figcaption
-                    h2.photostack-title Relaxing on the Beach
+                    h2.photostack-title Lovely Gifts
                     .photostack-back
                       | "Before we met, I was as lost as a person could be and yet you saw something in me that somehow gave me direction again."
                 figure
-                  a.photostack-img(data-rel="prettyPhoto[album]", href="http://placehold.it/800x450/D65679/E06485")
-                    img(src="http://placehold.it/240x240/D65679/E06485", alt="Love is in the Air")
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/6.jpg")
+                    img(src="/images/album/6-sm.jpg", alt="Love is in the Air")
                   figcaption
                     h2.photostack-title Love is in the Air
                     .photostack-back
                       | "You do realize that your greatest superpower is your ability to win me over with just one look, no matter how ridiculous you sound, right?"
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img07")
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/7.jpg")
+                    img(src="/images/album/7-sm.jpg", alt="Birthday Surprise")
                   figcaption
-                    h2.photostack-title Fit for Each Other
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img08")
+                    h2.photostack-title Birthday Surprise
+                    .photostack-back
+                      | "We don't need a special day to express our love. But when there is special day, we do our best do give all the love we could"
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/8.jpg")
+                    img(src="/images/album/8-sm.jpg", alt="Taking Selfie Together")
                   figcaption
-                    h2.photostack-title One Rainy Day
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img06")
+                    h2.photostack-title Taking Selfie Together
+                    .photostack-back
+                      | "We just need a simple thing to make us closer"
+                figure
+                  a.photostack-img(data-rel="prettyPhoto[album]", href="/images/album/9.jpg")
+                    img(src="/images/album/9-sm.jpg", alt="Rings of Faith")
                   figcaption
-                    h2.photostack-title Just Happy
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img02")
-                  figcaption
-                    h2.photostack-title Country Talk
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img11")
-                  figcaption
-                    h2.photostack-title Resting in the Park
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img12")
-                  figcaption
-                    h2.photostack-title Eternity
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img13")
-                  figcaption
-                    h2.photostack-title A Romantic Date
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img14")
-                  figcaption
-                    h2.photostack-title Watching the Sky
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img15")
-                  figcaption
-                    h2.photostack-title There"s Only Love
-                figure(data-dummy="")
-                  a.photostack-img(href="#")
-                    img(src="http://placehold.it/240x240/6e6e86/76768E", alt="img5")
-                  figcaption
-                    h2.photostack-title Together Again
+                    h2.photostack-title Rings of Faith
+                    .photostack-back
           // end PrettyPhoto gallery
         // end container
       // end #album
