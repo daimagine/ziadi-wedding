@@ -5,9 +5,9 @@ html
     // The Meta
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(name="description", content="Amor - HTML Wedding Template")
-    meta(name="keywords", content="jquery, css3, html5, animation, mobile, responsive, preview")
-    meta(name="author", content="Doriana")
+    meta(name="description", content="Fauziah and Adi's Wedding Website")
+    meta(name="keywords", content="fauziah, adi, wedding")
+    meta(name="author", content="Adi Kurniawan")
     link(rel="shortcut icon", href="images/favicon.ico")
     // The Stylesheets
     link(rel="stylesheet", href="css/bootstrap.css", type="text/css")
@@ -468,8 +468,14 @@ html
       #rsvp
         .container
           .rsvp-text
-            h2 Zia & Adi
-            p بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ 
+            ul#rsvp-slider.rslides
+              li
+                h2 Zia & Adi
+                p بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ 
+              each message in messages
+                li
+                  h2= message.name
+                  p= message.message
         // end container
       // end #rsvp
       // END RSVP
@@ -484,7 +490,7 @@ html
             // end col-md-3
             .col-md-6
               .contact-form
-                form#contact-form.form-horizontal(method="POST", action="contact-form.php", onsubmit="alert('Thank you for your feedback!');")
+                form#contact-form.form-horizontal(method="POST", action="/message", onsubmit="alert('Thank you for your contribution!');")
                   .form-group
                     label Name
                     input.form-control(type="text", name="name", required="")
