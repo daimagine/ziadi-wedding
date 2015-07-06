@@ -2,11 +2,12 @@ var mongoose = require('mongoose');
 
 var Message = mongoose.model('Message', mongoose.Schema({
 	name: String,
-	message: String
+	message: String,
+    moderated: Boolean
 }));
 
 exports.index = function(req, res) {
-	Message.find().lean().exec(function(err, messages) {
+	Message.find({ moderated: true }).lean().exec(function(err, messages) {
 		if (err) {
 			console.error(err);
 		}
@@ -18,7 +19,8 @@ exports.index = function(req, res) {
 exports.message = function(req, res) {
 	var message = {
 		name: req.body.name,
-		message: req.body.message
+		message: req.body.message,
+        moderated: false
 	};
 	
 	Message.create(message, function(err, message) {
