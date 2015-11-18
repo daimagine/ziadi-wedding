@@ -32,7 +32,8 @@ app.post('/message', routes.message);
 
 
 var mongoose = require('mongoose');
-var mongoURL = 'mongodb://mongouser:mongouser@dbh23.mongolab.com:27237/orchestra_8604bff8_e0cb6';
+// var mongoURL = 'mongodb://mongouser:mongouser@dbh23.mongolab.com:27237/orchestra_8604bff8_e0cb6';
+var mongoURL = 'mongodb://heroku_8zn3bc0h:c3jrfagi5bm6t7rrbhgvno94bt@ds055584.mongolab.com:55584/heroku_8zn3bc0h';
 
 mongoose.connection.on("connected", function(ref) {
 	console.log("Connected to mongo");
