@@ -34,7 +34,7 @@ app.post('/message', routes.message);
 var mongoose = require('mongoose');
 // var mongoURL = 'mongodb://mongouser:mongouser@dbh23.mongolab.com:27237/orchestra_8604bff8_e0cb6';
 // var mongoURL = 'mongodb://ziadimongo:ziadimongo@ds055584.mongolab.com:55584/heroku_8zn3bc0h';
-var mongoURL = 'mongodb+srv://daimagine:imagine123@daimagine.qabdt.mongodb.net/daimagine.ziadi?retryWrites=true&w=majority';
+var mongoURL = 'mongodb+srv://daimagine:imagine123@daimagine.qabdt.mongodb.net/daimagine?retryWrites=true&w=majority';
 
 mongoose.connection.on("connected", function(ref) {
 	console.log("Connected to mongo");
